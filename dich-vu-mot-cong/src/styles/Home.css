@@ -1,0 +1,150 @@
+/* Existing styles for Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.welcome-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-feed-btn {
+    background-color: #9e1b32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dashboard-card:hover {
+    background-color: #e0e0e0;
+}
+
+.card-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #9e1b32;
+    cursor: pointer;
+}
+
+.modal-header h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.request-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.request-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-id {
+    background-color: #063970;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.request-content {
+    flex: 1;
+}
+
+.request-title {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    text-align: left !important;
+}
+
+.request-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 0;
+}

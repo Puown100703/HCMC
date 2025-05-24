@@ -1,0 +1,195 @@
+.form-template-preview {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.template-preview-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.template-info-column {
+  flex: 0 0 300px;
+  min-width: 300px;
+}
+
+.template-content-column {
+  flex: 1;
+  min-width: 0;
+  /* Đảm bảo flex item có thể co lại nhỏ hơn nội dung */
+}
+
+.info-card {
+  height: 100%;
+}
+
+.info-item {
+  margin-bottom: 16px;
+}
+
+.info-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.info-content {
+  color: #333;
+}
+
+.content-card {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.form-template-content {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  min-height: 100px;
+  max-width: 100%;
+  /* Đảm bảo nội dung không co lại quá nhỏ */
+}
+
+/* Style thanh cuộn cho Chrome, Safari, Edge */
+.form-template-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.form-template-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.form-template-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.form-template-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-template-content h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.form-template-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.8rem 0;
+}
+
+.form-template-content h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0.6rem 0;
+}
+
+.form-template-content p {
+  margin: 0.5rem 0;
+}
+
+.form-template-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  word-break: break-all;
+  /* Ngăn chữ dài tràn ra ngoài */
+}
+
+.form-template-content table,
+.form-template-content th,
+.form-template-content td {
+  border: 1px solid #ddd;
+}
+
+.form-template-content th,
+.form-template-content td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.form-template-content th {
+  background-color: #f2f2f2;
+}
+
+.form-template-content ul,
+.form-template-content ol {
+  margin: 0.5rem 0;
+  padding-left: 2rem;
+}
+
+.form-template-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-template-content .signature-line {
+  display: inline-block;
+  min-width: 200px;
+  border-bottom: 1px solid #000;
+  margin: 0 0.5rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .template-preview-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .template-info-column {
+    flex: 1 1 auto;
+    min-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .template-content-column {
+    flex: 1 1 auto;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .form-template-content {
+    max-height: 300px;
+    /* Giảm chiều cao trên màn hình nhỏ */
+    width: 100%;
+  }
+
+  .form-template-preview {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .form-template-content {
+    max-height: 600px;
+    /* Tăng chiều cao trên màn hình lớn */
+  }
+
+  .form-template-preview {
+    width: 100%;
+  }
+
+  .template-preview-container {
+    width: 100%;
+  }
+}

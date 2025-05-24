@@ -1,0 +1,162 @@
+.staff-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.staff-sidebar {
+    width: 250px;
+    background-color: #1e36d4;
+    border-right: 1px solid #dee2e6;
+    transition: width 0.3s;
+    flex-shrink: 0;
+}
+
+.staff-sidebar.collapsed {
+    width: 80px;
+}
+
+.staff-sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.staff-sidebar-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.staff-sidebar-header p {
+    margin: 5px 0 0;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.staff-sidebar-nav {
+    padding: 10px 0;
+}
+
+.staff-sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.staff-sidebar-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: #3f51b5;
+}
+
+.staff-sidebar-nav a.active {
+    background-color: #3f51b5;
+    border-left-color: white;
+}
+
+.staff-sidebar-nav a.active:hover {
+    background-color: #0056b3;
+}
+
+.nav-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.staff-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
+}
+
+.staff-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.staff-toggle-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.staff-header-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.staff-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.staff-user-info {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+.staff-logout-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.staff-logout-btn:hover {
+    background-color: #c82333;
+}
+
+.staff-main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f3f5;
+    overflow-y: auto;
+}
+
+.staff-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.staff-overlay.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .staff-sidebar {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        bottom: 0;
+        z-index: 999;
+        transition: left 0.3s;
+    }
+
+    .staff-sidebar.mobile-open {
+        left: 0;
+    }
+
+    .staff-content {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,45 @@
+.staff-requests {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.staff-requests table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.staff-requests th,
+.staff-requests td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.staff-requests th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.staff-requests tr:hover {
+    background-color: #f1f3f5;
+}
+
+.staff-requests .modal {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .staff-requests table {
+        font-size: 0.9rem;
+    }
+
+    .staff-requests th,
+    .staff-requests td {
+        padding: 8px;
+    }
+
+    .staff-requests .modal {
+        width: 90%;
+    }
+}

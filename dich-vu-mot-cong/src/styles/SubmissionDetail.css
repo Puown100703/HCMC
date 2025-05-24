@@ -1,0 +1,112 @@
+.submission-detail-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submission-detail-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  gap: 20px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mt-4 {
+  margin-top: 16px;
+}
+
+.submission-content {
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+}
+
+.submission-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.submission-content table,
+.submission-content th,
+.submission-content td {
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+}
+
+.submission-content th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+/* Editable fields styling */
+.submission-content .editable-field {
+  display: inline-block;
+  min-width: 50px;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 5px;
+}
+
+/* Feedback styling */
+.feedback-container {
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.feedback-info {
+  margin-left: 12px;
+}
+
+.feedback-author {
+  font-weight: 500;
+  color: #333;
+}
+
+.feedback-time {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.feedback-content {
+  color: #333;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .submission-detail-container {
+    padding: 10px;
+  }
+
+  .ant-descriptions-item-label,
+  .ant-descriptions-item-content {
+    padding: 12px 8px;
+  }
+}
